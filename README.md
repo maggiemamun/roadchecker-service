@@ -1,6 +1,6 @@
 # TFL Road service
 
-This is a Spring based Rest API integrated with Tfl Unified API to provide the road status . This API takes in a road Id from the user, retrieves the roadstatus from TFL road service API and then returns the road status in the response .
+This is a Spring based Rest API integrated with Tfl Unified API to provide the road status . This API takes in a roadId from the user, retrieves the roadstatus from TFL road service API and then returns the road status in the response .
 
 ## Technology Used
 Java 8, Springboot 2.3.Release,  Junit 5, Maven 3.9.5, Git, Intellij
@@ -25,7 +25,7 @@ Java 8, Springboot 2.3.Release,  Junit 5, Maven 3.9.5, Git, Intellij
   app.key= <app key :to be added >
 ```
 
-4. Run the Main application RoadcheckerMainApplication.java.
+4. Run/Start the Main application RoadcheckerMainApplication.java.
    
 ```bash
   src/main/java/com/tfl/roadchecker/RoadcheckerMainApplication.java
@@ -95,5 +95,5 @@ curl --location --request POST 'http://localhost:8080/road-status/check' \
     
 ## Additional notes
 1. Assumptions
-    - The road id (@ uri "/road-status/check")  will accept valid alphanumeric values - 
+    - The road id (@ uri "/road-status/check")  will accept valid alphanumeric values 
 
