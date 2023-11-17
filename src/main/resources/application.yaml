@@ -1,0 +1,4 @@
+road-api:
+  endpoint: ${road.api.url}
+  appId: ${app.id}
+  appKey: ${app.key}
