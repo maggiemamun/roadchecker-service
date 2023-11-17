@@ -94,5 +94,5 @@ curl --location --request POST 'http://localhost:8080/road-status/check' \
     
 ## Additional notes
 1. Assumptions
-    - The road id (@ uri "/road-status/check")  will accept valid alphanumeric values 
+    - The roadId (@ uri "/road-status/check")  will accept valid alphanumeric values 
 
