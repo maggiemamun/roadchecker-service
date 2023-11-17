@@ -19,7 +19,6 @@ Java 8, Springboot 2.3.Release,  Junit 5, Maven 3.9.5, Git, Intellij
 2. Import the repo to an IDE like Intellij.
 3. Add the appid and appkey (if available)to the application properties file as below
 ```bash
- **application.properties**
   src/main/resources/application.properties
   app.id= <app id :to be added >
   app.key= <app key :to be added >
@@ -52,7 +51,7 @@ N.B. the application will run at default port 8080, however if there is  a port 
 2. Alternatively test the roadchecker-service API via postman
 
 ## Valid Road
-###Curl
+### *Curl*
 ```bash
 curl --location --request POST 'http://(server e.g localhost ):(serverport e.g 8080)/road-status/check' \
 --header 'Content-Type: application/json' \
@@ -61,13 +60,13 @@ curl --location --request POST 'http://(server e.g localhost ):(serverport e.g 8
 }'
 ```
 
-### Response:
+### *Response:*
               "response": "The status of the A2 is Good and No Exceptional Delays."
 
 
 
 ## Non Existent Road
-### Curl
+### *Curl*
  ```bash
 curl --location --request POST 'http://(server e.g localhost ):(serverport e.g 8080)/road-status/check' \
 --header 'Content-Type: application/json' \
@@ -76,11 +75,11 @@ curl --location --request POST 'http://(server e.g localhost ):(serverport e.g 8
 }'
 ```
 
-### Response:  
+### *Response:* 
            "response": "A200 is not a valid road."
                 
 ## Invalid Road
-### Curl
+### *Curl*
  ```bash
 curl --location --request POST 'http://localhost:8080/road-status/check' \
 --header 'Content-Type: application/json' \
@@ -89,7 +88,7 @@ curl --location --request POST 'http://localhost:8080/road-status/check' \
 }'
 ```
 
-### Response: 
+### *Response:*
            { "uri": "/road-status/check",
              "exceptionMessage": "The road id is invalid"}
     
